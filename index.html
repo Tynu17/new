@@ -1,0 +1,212 @@
+<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.svg">
+    <!-- Favicon by https://remixicon.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="My description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Of Information</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- <a href="/"><img alt="Logo" src="https://via.placeholder.com/200x70?text=Logo" height="70"></a> -->
+            <a href="">Home</a>
+            <ul>
+                <!-- <li>Menu Item 1</li> -->
+                <li><a href="#listSource">List Source</a></li>
+                <!-- <li><a href="#">Dropdown Menu Item</a>
+                    <ul>
+                        <li><a href="#">Sublink 1</a></li>
+                        <li><a href="#">Sublink 2</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Hero -->
+        <main>
+            <figure>
+                <img class="hero-img" src="assets/undraw_online_information_4ui6.svg" alt="">
+                <figcaption>
+                    Illustration by <a href="https://undraw.co/illustrations">undraw.co</a>
+                </figcaption>
+            </figure>
+            <h1>Observe many information</h1>
+            <p>from many trustful source.</p>
+            <br>
+            <!-- <mark>
+                [Still only mockup]
+            </mark> -->
+        </main>
+        <!-- <p>
+            <a href="#"><i>Italic Link Button</i></a><a href="#">
+            <b>Bold Link Button &rarr;</b></a>
+        </p> -->
+    </header>
+    <main>
+
+        <hr>
+        <section id="main">
+            <!-- MAIN CONTENT -->
+        </section>
+
+        <!-- Random Quote -->
+        <hr id="random_quote">
+        <section>
+            <header>
+                <h2>Random Quote</h2>
+                source: <a href="#listSource">below</a><br>
+            </header>
+            <main>
+                <blockquote class="hidden">
+                    <span id="quote">"Before software can be reusable it first has to be usable."</span>
+                    <footer><i id="author">- Ralph Johnson</i></footer>
+                </blockquote>
+            </main>
+        </section>
+        <section>
+            <p>
+                <!-- <a href='#!' onclick="rollQuote()"><i>Roll</i></a> -->
+                <a class="animated pulse infinite" href='#!' onclick="rollQuote()"><b>Roll</b></a>
+            </p>
+        </section>
+
+        <div class="onDev" >
+            <hr>
+            <section>
+                a
+            </section>
+        </div>
+
+        <!-- List of Source -->
+        <hr>
+        <section>
+            <header>
+                <h2 id="listSource">List of Source</h2>
+                <details>
+                    <summary>
+                        Where is the other info?<br> <small>click me...</small>
+                    </summary>
+                    <figure>
+                        <img src="assets/tutor.gif" alt="Tutorial how to show other information.">
+                    </figure>
+                </details>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Content</th>
+                        <th>Source</th>
+                        <th>Show</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>COVID-19 Case in Indonesia</td>
+                        <td><a href="https://www.trackcorona.live/api">trackcorona.live/api</a></td>
+                        <td><a href="#!" onclick="show(html_covid19_case, covidCase, true)">up</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Exchange Rate USD to IDR</td>
+                        <td><a href="https://exchangeratesapi.io/">exchangeratesapi.io</a></td>
+                        <td><a href="#!" onclick="show(html_exchangeRate, exchangeRate, true)">up</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Today Salah Times</td>
+                        <td><a href="https://waktusholat.org/api">waktusholat.org/api</a></td>
+                        <td><a href="#!" onclick="show(html_salahTimes, salahTimes, true)">up</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Random Quotes</td>
+                        <td><a href="http://api.quotable.io/">api.quotable.io</a></td>
+                        <td><a href="#random_quote">up</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <!-- <article>
+            <h2>Left-aligned header</h2>
+            <p>Left-aligned paragraph</p>
+            <aside>
+                <p>Article callout</p>
+            </aside>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+            </ul>
+            <figure>
+                <img alt="Stock photo" src="https://via.placeholder.com/1080x500?text=Amazing+stock+photo">
+                <figcaption><i>Image caption</i></figcaption>
+            </figure>
+        </article>
+        <hr>
+        <div>
+            <details>
+                <summary>Expanable title</summary>
+                <p>Revealed content</p>
+            </details>
+            <details>
+                <summary>Another expanable title</summary>
+                <p>More revealed content</p>
+            </details>
+            <br>
+            <p>Inline <code>code</code> snippets</p>
+            <pre>
+                <code>
+// preformatted code block
+                </code>
+            </pre>
+        </div>
+        <hr>
+        <section>
+            <form>
+                <header>
+                    <h2>Form title</h2>
+                </header>
+                <label for="input1">Input label:</label>
+                <input type="text" id="input1" name="input1" size="20" placeholder="Input1">
+                <label for="select1">Select label:</label>
+                <select id="select1">
+                    <option value="option1">option1</option>
+                    <option value="option2">option2</option>
+                </select>
+                <label for="textarea1">Textarea label:</label>
+                <textarea cols="40" rows="5" id="textarea1"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main> -->
+
+    <footer>
+        <!-- <hr> -->
+        <section>
+            <p>
+                2020
+            </p>
+        </section>
+    </footer>
+
+    <script src="html.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

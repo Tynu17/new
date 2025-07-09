@@ -1,0 +1,61 @@
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .hero-img {
+        max-width: 50%;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .hero-img {
+        max-width: 15%;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.hidden {
+    opacity: 0;
+}
+.fiction {
+    display: none;
+}
+.onDev {
+    display: none;
+}
+aside figure img {
+    width: 100%;
+    height: 200px;
+}
+
+.t-xLarge {
+    font-size: x-large;
+    font-weight: bold;
+}
+.t-xxLarge {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.t-xxxLarge {
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.confirmed {
+    color: #f1c40f;
+}
+.recovered {
+    color: #3498db;
+}
+.deaths {
+    color: #e74c3c;
+}
+.exchangeRate {
+    color: #F9A826;
+}
+.salahTimes {
+    color: #7E58C7;
+    display: flex;
+    justify-content: center;
+}
